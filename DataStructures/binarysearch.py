@@ -6,7 +6,6 @@ It's important that the list is sorted!
 data = [2, 4, 5, 7, 8, 9, 12, 14, 17, 19, 22, 25, 27, 28, 33, 37]
 target = 28
 
-# Linear Search
 
 def linear_search(data, target):
     """
@@ -17,14 +16,14 @@ def linear_search(data, target):
             return True
     return False
 
+
 def binary_search(data, target):
     """
     log(n) instead of linear time.
     """
     low = 0
     high = len(data) - 1
-    
-    
+
     while low <= high: # while low is smaller or equal to high
         mid = (low + high) // 2 # middle element of the list
         
@@ -38,6 +37,7 @@ def binary_search(data, target):
             low = mid + 1
         
     return False
+
 
 def binary_search_recursive(data, target, low, high):
     """
@@ -56,6 +56,7 @@ def binary_search_recursive(data, target, low, high):
         
         else:
             return binary_search_recursive(data, target, mid + 1, high)
+
 
 print(binary_search(data, target))
 print(binary_search_recursive(data, target, 0, len(data)-1))
