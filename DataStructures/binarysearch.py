@@ -1,10 +1,13 @@
 """
 Binary search Python.
-It's important that the list is sorted!
+
+Binary search is basically splitting an ordered list through half and throwing half of the list away.
+This saves time because that part you throw out, you don't need to look at it!
+It's important that the list is sorted of course, else it won't work.
 """
 
-data = [2, 4, 5, 7, 8, 9, 12, 14, 17, 19, 22, 25, 27, 28, 33, 37]
-target = 28
+DATA = [2, 4, 5, 7, 8, 9, 12, 14, 17, 19, 22, 25, 27, 28, 33, 37]
+TARGET = 28
 
 
 def linear_search(data, target):
@@ -58,5 +61,5 @@ def binary_search_recursive(data, target, low, high):
             return binary_search_recursive(data, target, mid + 1, high)
 
 
-print(binary_search(data, target))
-print(binary_search_recursive(data, target, 0, len(data)-1))
+print(binary_search(DATA, TARGET))
+print(binary_search_recursive(DATA, TARGET, 0, len(DATA) - 1))
