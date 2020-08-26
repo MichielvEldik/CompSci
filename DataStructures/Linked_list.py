@@ -21,7 +21,6 @@ class LinkedList:
         while node is not None:  # only do the following if a node has been appended to self.head
             nodes.append(node.data)  # append empty list with the node data
             node = node.next  # update the variable node with its value for next, which is the second node.
-                              # this keeps going
         nodes.append("None")
         return "->".join(nodes)
 
