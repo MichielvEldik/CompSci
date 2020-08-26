@@ -1,7 +1,6 @@
 """
 Code inspired by...
 https://thispointer.com/python-3-ways-to-check-if-there-are-duplicates-in-a-list/
-
 """
 
 
@@ -54,29 +53,9 @@ def duplicates_check_3(input_list):
 
 def main():
     elements_list = ['Hello', 'Ok', 'is', 'Ok', 'test', 'this', 'is', 'a', 'test']
-    print('*** Check for duplicates in list using Set and comparing sizes ***')
-    result = duplicates_check_1(elements_list)
-    if result:
-        print('Yes, list contains duplicates')
-    else:
-        print('No duplicates found in list')
-
-    print('*** Check for duplicates in list using Set and looking for first duplicate ***')
-
-    result = duplicates_check_2(elements_list)
-
-    if result:
-        print('Yes, list contains duplicates')
-    else:
-        print('No duplicates found in list')
-
-    print('*** Check if list contains duplicates using list.count() ***')
-    result = duplicates_check_3(elements_list)
-
-    if result:
-        print('Yes, list contains duplicates')
-    else:
-        print('No duplicates found in list')
+    print(duplicates_check_1(elements_list))
+    print(duplicates_check_2(elements_list))
+    print(duplicates_check_3(elements_list))
 
 
 if __name__ == '__main__':
