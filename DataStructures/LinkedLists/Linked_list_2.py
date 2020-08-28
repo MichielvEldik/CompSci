@@ -10,7 +10,7 @@ class LinkedList:
     def __init__(self, nodes=None):  # gets initialized with a list of nodes
         self.head = None
         if nodes is not None:  # If there is at least one node passed to the class...
-            node = Node(data=nodes.pop(0))  # pop first element in the list ("a") from nodes. assign a as "node"
+            node = Node(data=nodes.pop(0))  # pop first element in the list ("a") from nodes. assign a as self.head
             self.head = node  # make node ("a") the head of linked list.
             for elem in nodes:  # for every element in nodes ("a", "b", "c")
                 node.next = Node(data=elem)  # node.next for ("a") is elem "b". ("a") so node.next = Node b
