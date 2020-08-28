@@ -53,7 +53,7 @@ class LinkedList:
         for node in self:  # for all nodes using our __iter__ method...
             if node.data == target_node_data:  # if we find a match at some point throughout the iteration...
                 prev_node.next = new_node  # previous node's next will be equal to the new node
-                new_node.next = node  # new node's next will be equal to node 
+                new_node.next = node  # new node's next will be equal to node
                 return
             prev_node = node  # update previous node
 
@@ -78,7 +78,6 @@ class LinkedList:
 
 
 class Node:
-
     def __init__(self, data):
         self.data = data
         self.next = None

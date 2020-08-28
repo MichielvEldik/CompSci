@@ -30,7 +30,6 @@ class Node:
     The node stores two things: data and next.
     next is initialized as none.
     """
-
     def __init__(self, data):
         self.data = data
         self.next = None
